@@ -7,10 +7,10 @@ on: # trigger the workflow on push event
      #- dev # set the branch name you want to trigger the workflow
 jobs:
   hello-world: #name of your job
-  runs-on: ubuntu-latest # set the runner environment
-  steps:
-  - name: Checkout code # step name
-    uses: actions/checkout@v4 # action to checkout the code
+    runs-on: ubuntu-latest # set the runner environment
+    steps:
+    - name: Checkout code # step name
+      uses: actions/checkout@v4 # action to checkout the code
 
-  - name: Print a message # step name
-    run: echo Hello, world! # command to run
+    - name: Print a message # step name
+      run: echo Hello, world! # command to run
