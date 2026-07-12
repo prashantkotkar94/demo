@@ -1,11 +1,12 @@
 name: Demo-1 # name of your workflow
+
 on: # trigger the workflow on push event
    push:
      #branches:
      #- main # set the branch name you want to trigger the workflow
      #- dev # set the branch name you want to trigger the workflow
 jobs:
-  hello-world: # name of your job
+  hello-world: #name of your job
   runs-on: ubuntu-latest # set the runner environment
   steps:
   - name: Checkout code # step name
